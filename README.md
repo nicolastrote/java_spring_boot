@@ -55,7 +55,7 @@ Software development kit manager (ancien nom GVM) idéal pour les projets JAVA. 
 * springboot version peut etre updaté en cliquant dessus
 * dependencies: Web
 
-# GROOVY_APP
+# EXEMPLE 1 : GROOVY_APP
 * creer le fichier app.groovy
 ```
 @RestController
@@ -76,6 +76,30 @@ class HelloWord {
 	public String home() {  "hello world" }
 }
 ```
+
+# EXEMPLE 2 : HELLO_SPRING_BOOT_2
+Pour créer un projet et sa structure sous spring : 
+* une 1e solution : start.spring.io
+* une 2e soution : spring init -d=web  my-app
+* une 3e solution : curl start.spring.io
+  en bas du retour de la commande, il y a les exemples comme
+  ```curl https://start.spring.io/starter.zip -o demo.zip```
+* une 4e : avec IntelliJ
+  - création avec les options par défaut sous spring initialzr (java, maven) et ajouter import WEB
+  - ne pas tenir compte du fichier : DemoApplication
+  - creer à côté le fichier HomeController:
+  ```
+  	package com.example.demo;
+	import org.springframework.web.bind.annotation.RequestMapping;
+	import org.springframework.web.bind.annotation.RestController;
+	@RestController
+	public class HomeController {
+    @RequestMapping("/")
+    public String home() { return "hello spring boot 3"; }
+}
+  ```
+
+# EXEMPLE 3 : JAVA BUILD TOOLS (ant/maven/gradle)
 
 # SOURCES
 * https://www.udemy.com/spring-boot-getting-started
