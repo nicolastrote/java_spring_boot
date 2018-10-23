@@ -1,4 +1,4 @@
-# JAVA_SPRING
+# JAVA_SPRING_BOOT
 Preparation pour un environnement SPRING BOOT
 
 ## INSTALLATION JAVA JDK 8
