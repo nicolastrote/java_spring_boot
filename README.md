@@ -101,7 +101,27 @@ Pour créer un projet et sa structure sous spring :
 }
   ```
 
-# EXEMPLE 3 : JAVA BUILD TOOLS (ant/maven/gradle)
+# EXEMPLE 3 : SPRING DEV TOOLS - HelloDevTools
+* créer un projet avec IntelliJ
+* 1e page ne pas changer les infos (ie: demo)
+* 2d page choisir l'import WEB
+* 3e page choisir le nom du projet
+
+## OPTIONS: 
+* ouvrir HELP > Find Action
+* chercher pour REGISTRY
+* compiler.automake.allow.when.app.running : true 
+
+## PREFERENCIES:
+* build,execution,deployment > compiler > Build project auto
+
+## LIVERELOAD EXTENSION
+* installer l'extension de cette page : http://livereload.com/extensions
+
+## CODING
+* faire RUN sur intelliji et voir qu'il manque un controller
+* creer un nouveau fichier JAVA nommé HomeController
+
 
 
 
